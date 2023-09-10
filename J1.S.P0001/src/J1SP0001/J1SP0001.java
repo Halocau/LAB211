@@ -61,8 +61,9 @@ public class J1SP0001 {
       return arr;
     }
 
-    // bubble sort
+    // Sort the array using by BubbleSort
     private static void arrayBubbleSort(int[] arr) {
+        //Show unsorted array
         System.out.print("Unsorted array: ");
         System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
@@ -72,7 +73,7 @@ public class J1SP0001 {
                 System.out.println(arr[i] + "]");
             }
         }
-
+        //After using by BubbleSort
         System.out.print("Sorted array: ");
         int temp;
         for (int i = 0; i < arr.length; i++) {
