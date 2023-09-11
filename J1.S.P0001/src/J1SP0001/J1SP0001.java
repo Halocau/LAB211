@@ -15,9 +15,12 @@ import java.util.Scanner;
 public class J1SP0001 {
 
     private static final Scanner sc = new Scanner(System.in);
-
+    // no override. Help user don't change input date source
     //Check input number user exeption
+
     private static int checkInput() {
+        //creates an infinite loop, until the user enters a positive integer
+        //tạo một vòng lặp vô hạn, cho đến khi người dùng nhập một số nguyên dương
         while (true) {
             try {
                 int result = Integer.parseInt(sc.next().trim());
@@ -29,7 +32,6 @@ public class J1SP0001 {
                 Example: enter string "  123  " => 123 
                          enter string  "nsf" = > exeption
                  */
-                
                 //mistake negative
                 if (result <= 0) {
                     System.err.println("Please enter a positive number");
@@ -38,27 +40,23 @@ public class J1SP0001 {
                     return result;
                 }
             } catch (NumberFormatException e) {
-     //When a string cannot be converted to an integer, an error is reported
+                //When a string cannot be converted to an integer, an error is reported
                 System.err.println("Please enter a positive number");
                 System.out.println("Enter again: ");
             }
         }
     }
 
-    // check user enter number of array
-    private static int sizeInput() {
-        System.out.println("Enter number of array: ");
-        int n = checkInput();
-        return n;
-    }
-
     // use ramdom becase test array
     private static int[] RandomArray(int[] arr) {
         Random r = new Random();
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = r.nextInt(100); // You can adjust the range as needed
+            arr[i] = r.nextInt(201) - 100;
+            //r.nextInt 0 -> 200
+            // r.nextInt(201) - 100 || -100 -> 200
+            // nếu giáo viên bảo muốn chạy ramdom ko giới hạn thì sửa lại r.nextInt
         }
-      return arr;
+        return arr;
     }
 
     // Sort the array using by BubbleSort
@@ -98,7 +96,8 @@ public class J1SP0001 {
     }
 
     public static void main(String[] args) {
-        int n = sizeInput(); // Get the number of array elements from the user|| elsments: phan tu
+        System.out.println("Enter number of array: ");
+        int n = checkInput(); // Get the number of array elements from the user|| elsments: phan tu
         int[] arr = new int[n];//Create a new array with size n
         RandomArray(arr);
         arrayBubbleSort(arr); // Sort the array
