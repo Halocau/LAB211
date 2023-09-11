@@ -53,7 +53,7 @@ public class J1SP0001 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = r.nextInt(201) - 100;
             //r.nextInt 0 -> 200
-            // r.nextInt(201) - 100 || -100 -> 200
+            // r.nextInt(201) - 100 || -100 -> 100
             // nếu giáo viên bảo muốn chạy ramdom ko giới hạn thì sửa lại r.nextInt
         }
         return arr;
