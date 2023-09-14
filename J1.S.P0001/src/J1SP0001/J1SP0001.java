@@ -74,15 +74,20 @@ public class J1SP0001 {
         //After using by BubbleSort
         System.out.print("Sorted array: ");
         int temp;
+        boolean check;
         for (int i = 0; i < arr.length; i++) {
+            check = false;
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] > arr[j]) {
                     temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
+                    check = true;
                 }
             }
-
+            if(check==false){
+                break;
+            }
         }
         System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
