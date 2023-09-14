@@ -77,13 +77,13 @@ public class J1SP0001 {
         boolean check;
         for (int i = 0; i < arr.length; i++) {
             check = false;
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] > arr[j]) {
-                    temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
+            for (int j = i + 1; j < arr.length - i  -1; j++) {
+                 if (arr[j] > arr[j + 1]) {
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                     check = true;
-                }
+                 }
             }
             if(check==false){
                 break;
