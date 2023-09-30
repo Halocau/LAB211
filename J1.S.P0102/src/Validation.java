@@ -30,7 +30,7 @@ public class Validation {
             }
             // Nếu đúng fomat là số
             else if(!checkContainCharacter(input)){
-                // \d{1,2}: có thể có 1 hoặc 2 số ((ngày và tháng))
+                // \d{1,2}: có thể có 1 hoặc 2 số (ngày và tháng)
                 // \d{4} : có 4 số (năm)
                 // [/] : chứa cái kí tự /
                 
