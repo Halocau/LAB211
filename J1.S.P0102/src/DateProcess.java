@@ -1,3 +1,4 @@
+package J1SP0102;
 // Chương trình hiểu thị ra mỗi THỨ
 import java.text.SimpleDateFormat;
 import java.util.Date;
