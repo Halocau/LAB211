@@ -1,3 +1,4 @@
+package J1SP0102;
 
 public class Main {
 
