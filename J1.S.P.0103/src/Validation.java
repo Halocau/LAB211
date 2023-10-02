@@ -1,3 +1,4 @@
+package J1SP0103;
 /*
   Hướng làm: Trong class check xem có ngoại lệ or giải quyết vấn đề(Validation)
   Ngoại lệ:
