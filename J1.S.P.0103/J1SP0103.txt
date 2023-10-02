@@ -1,0 +1,28 @@
+LAB211 Assignment	Type:	Short Assignment
+	Code:	J1.S.P0103
+	LOC:	20 
+	Slot(s):	1
+
+Title
+	Compare Date
+Background 
+N/A
+
+Program Specifications
+Write a program to takes input date as [dd/mm/yyyy] format and compare with the second the day.
+
+Function details:
+
+1.	User enter the first date with [dd/mm/yyyy] format 
+2.	User enter the second date with [dd/mm/yyyy] format 
+3.	Compare and display
+
+Expectation of User interface:
+The Program must have interface as below:
+
+
+Please enter the first date: 12/12/1988
+Please enter the second date: 5/12/1989
+
+Date1 is before Date2
+
